@@ -41,7 +41,7 @@ def sum_view(request):
     n2 = float(request.GET.get("n2"))
     result = f"sum: {n1 + n2}"
 
-    return HttpResponse(result)
+    return HttpResponse(f"<p>{result}</p>")
 
 
 # ---------------------------------------------------------------------------
